@@ -46,7 +46,9 @@ function DataTable<T>({
               <TableRow key={index}>
                 {columns.map((column) => (
                   <TableCell key={column.id as string}>
-                    {String(row[column.id])}
+                    {column.id === "price"
+                      ? `$${row[column.id]}`
+                      : String(row[column.id])}
                   </TableCell>
                 ))}
               </TableRow>
