@@ -10,7 +10,6 @@ function App() {
         <Routes>
           <Route path="/dashboard" element={<OrderManagement />} />
           <Route path="/" element={<LoginForm />} />
-          {/* Редирект на страницу входа по умолчанию */}
         </Routes>
       </Router>
     </div>
